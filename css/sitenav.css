@@ -1,0 +1,33 @@
+@import "base.less";
+.m-header .h-center {
+  text-align: center;
+  font-size: .875rem;
+  font-weight: bold;
+  color: #fff;
+}
+.site-main ul {
+  width: 100%;
+  padding: .5rem 2.25rem;
+  box-sizing: border-box;
+}
+.site-main ul li {
+  float: left;
+  padding: .625rem .4375rem;
+  box-sizing: border-box;
+  border: 1px solid #c3c3c3;
+  margin-right: .3125rem;
+  margin-bottom: .3125rem;
+  background-color: #f4f4f4;
+  position: relative;
+}
+.site-main ul li a .lit-img {
+  margin-right: .4375rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.site-main ul li a span {
+  color: #222;
+  font-size: .5625rem;
+  margin-left: .9375rem;
+}

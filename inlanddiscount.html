@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ray-国内折扣</title>
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/inlanddiscount.css">
+</head>
+<body>
+    <!--头部开始-->
+    <div class="m-header clearfix">
+        <span class="h-left fa fa-angle-left"></span>
+        <div class="h-center">
+            <p>国内折扣</p>
+        </div>
+        <div class="h-right">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </div>
+    <!--头部结束-->
+   
+   <!--main区域开始-->
+
+<div class="land-main">
+    <div class="land-box clearfix">
+        
+        <!--挖个坑-->
+    </div>
+
+</div>
+<!--main区域结束-->
+
+
+
+<!--返回顶部开始--> 
+<div class="m-footer">
+    <div class="m-back">
+        <ul class="clearfix">
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><span class="iconfont">&#xe611;</span>返回顶部</li>
+        </ul>
+    </div>
+
+    <div class="m-com">
+        <p><span>手机APP下载</span>&nbsp;<i>慢慢买手机版</i><b>--掌上比价平台</b></p>
+        <p><a href="index.html">m.manmanbuy.com</a></p>
+    </div>
+
+</div>
+
+<!--返回顶部结束-->
+
+
+
+
+<!--模板开始-->
+<script type="text/html" id="tpl">
+    {{each result v i}}
+       <a href="discount.html?productid={{v.productId}}">
+            <div class="box-left fl">
+            {{#v.productImg}}
+            <p class="box-tit">{{v.productName}}</p>
+            <p class="box-money">{{v.productPrice}}</p>
+            <span><i>{{v.productFrom}}</i>|<i>{{v.productTime}}</i></span>
+        </div>  
+       </a>
+       
+    {{/each}}
+</script>
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/common.js"></script>
+<script src="js/inlanddiscount.js"></script>    
+</body>
+</html>

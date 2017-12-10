@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ray-商品评价页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/bijia.css">
+</head>
+<body>
+    <!--头部开始-->
+    <div class="m-header clearfix">
+        <div class="h-left">
+            <img src="images/header_logo.png" alt="">
+        </div>
+        <div class="h-right">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </div>
+    <!--头部结束-->
+    <!--搜索区域开始-->
+    <div class="m-search">
+        <div class="s-inp">
+            <input type="text" name="" value="请输入你想比价的商品">
+        </div>
+        <div class="s-but fr">
+            <input type="button" value="搜索">
+        </div>
+    </div>
+    <div class="space"></div>
+    <!--搜索区域结束-->
+   <!--main区域开始-->
+
+<div class="m-main">
+    <div class="list-tit clearfix">
+        <!--挖一个坑-->
+       
+    </div>
+    <!--shangpin详情-->
+    <div class="set-box">
+       <!--挖一个坑-->
+        
+    </div>
+<!--商品详情结束-->
+<!--购买栏开始-->
+<div class="lis-buy">
+    <ul class="clearfix">
+        <li><a href="#">比价购买</a></li>
+        <li><a href="#">产品参数</a></li>
+        <li><a href="#">评价（23322）</a></li>
+    </ul>
+    
+</div>
+<!--购买栏结束-->
+<!--加个框开始-->
+<div class="bj-price clearfix">
+    <div class="price-name fl">        
+         <img  src="images/slogo.png" alt="">
+        <p class="pri-name">京东商城</p>        
+    </div>
+        <div class="money fr clearfix">
+            <span>100099</span>
+            <input class="fr sub-buy" type="button" name="" value="去购买">
+        </div>
+</div>
+<!--价格框结束-->
+<div class="lis-tips">
+    <p>* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p>
+</div>
+<!--网友评价开始-->
+<div class="bj-comm">
+    网友评价
+</div>
+<!--网友评价结束-->
+<!--评价详情框开始-->
+<div class="comm-list">
+    <!--挖一个坑-->
+
+</div>
+<!--评价框结束-->
+
+</div>
+<!--main区域结束-->
+
+<!--返回顶部开始--> 
+<div class="m-footer">
+    <div class="m-back">
+        <ul class="clearfix">
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><span class="iconfont">&#xe611;</span>返回顶部</li>
+        </ul>
+    </div>
+
+    <div class="m-com">
+        <p><span>手机APP下载</span>&nbsp;<i>慢慢买手机版</i><b>--掌上比价平台</b></p>
+        <p><a href="index.html">m.manmanbuy.com</a></p>
+    </div>
+
+</div>
+
+<!--返回顶部结束-->
+<!--模板一-->
+<script type="text/html" id="tpl">
+    {{each result v i}}
+         <span class="fl tit-id">
+             <a href="index.html">首页</a>> <a href="categroy.html">全部分类</a> >乐视>         
+         </span>
+        <input class="fr" type="button" value="筛选">
+    {{/each}}
+</script>
+
+<!--模板二-->
+<script type="text/html" id="tpl2">
+{{each result v i}}
+
+     <div class="box-buy">
+            <h3>{{v.productName}}</h3>
+            <div class="img-buy">
+               <a href="#">
+                   {{#v.productImg}}
+               </a>
+            </div>
+            <div class="round-buy fr">
+                <a href="#">收藏</a>
+            </div>
+     </div>
+
+{{/each}}
+</script>
+
+<!--模板三-->
+<script type="text/html" id="tpl3">
+    {{each result v i}}
+    <div class="item">
+        <div class="item-t clearfix">
+            <span class="fl">{{v.comName}}</span>
+            <div class="item-tr fr">
+                <p>{{v.comTime}}</p>
+                <p>{{v.comFrom}}</p>
+            </div>            
+        </div>
+        <div>
+            <div class="item-b">
+                <p>{{v.comContent}}</p>
+
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/common.js"></script>
+<script src="js/bijia.js"></script>    
+</body>
+</html>

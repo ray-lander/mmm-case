@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ray-商品列表页</title>
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css">
+    <link rel="stylesheet" href="css/base.css">    
+    <link rel="stylesheet" href="css/productlist.css">
+</head>
+<body>
+    <!--头部开始-->
+    <div class="m-header clearfix">
+        <div class="h-left">
+            <img src="images/header_logo.png" alt="">
+        </div>
+        <div class="h-right">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </div>
+    <!--头部结束-->
+    <!--搜索区域开始-->
+    <div class="m-search">
+        <div class="s-inp">
+            <input type="text" name="" value="请输入你想比价的商品">
+        </div>
+        <div class="s-but fr">
+            <input type="button" value="搜索">
+        </div>
+    </div>
+    <div class="space"></div>
+    <!--搜索区域结束-->
+   <!--main区域开始-->
+
+<div class="m-main">
+    <div class="list-tit clearfix">
+        <!--挖一个坑-->
+    </div>
+    <div class="set-item">
+        <!--在挖一个坑-->
+        
+    </div>
+
+</div>
+<!--main区域结束-->
+
+<!--翻页区域开始-->
+
+<div class="set-page">
+    <div class="m-page clearfix">
+        <div class="fl page-prve">
+            <input type="button" value="上一页">
+        </div>
+        <div class="page-sel">
+            <select>
+                <!--挖一个坑-->
+            </select>
+        </div>
+        <div class="fr page-next">
+            <input type="button" value="下一页">
+        </div>
+        <div class="space"></div>
+    </div>
+</div>
+
+<!--翻页区域结束-->
+
+<!--返回顶部开始--> 
+<div class="m-footer">
+    <div class="m-back">
+        <ul class="clearfix">
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><span class="iconfont">&#xe611;</span>返回顶部</li>
+        </ul>
+    </div>
+
+    <div class="m-com">
+        <p><span>手机APP下载</span>&nbsp;<i>慢慢买手机版</i><b>--掌上比价平台</b></p>
+        <p><a href="index.html">m.manmanbuy.com</a></p>
+    </div>
+
+</div>
+
+<!--返回顶部结束-->
+<!--模板一-->
+<script type="text/html" id="tpl">
+    {{each result v i}}
+        <span class="fl tit-id">
+             <a href="index.html">首页</a>> <a href="categroy.html">全部分类</a>>{{v.category}}         
+         </span>
+        <input class="fr" type="button" value="筛选">
+    {{/each}}
+</script>
+
+
+<!--模板2开始-->
+<script type="text/html" id="tpl2">
+    {{each result v i}}
+    <div class="list-item clearfix">
+        <div class="list-img fl">
+            {{#v.productImg}}
+        </div>
+        <a href="bijia.html?product={{v.productId}}">
+            <div class="list-info fr" >            
+                <span class="text-">{{v.productName}}</span>
+                <p>{{v.productPrice}}</p>
+                <p>
+                    <span>{{v.productQuote}}</span>
+                    <span>评论(<i>{{v.productCom}}</i>)</span>
+                </p>                       
+        </div>
+        </a>
+    </div>
+    {{/each}}
+</script>
+
+<script type="text/html" id="tpl3">
+   
+    <% for(var i=1;i<=list;i++){%>
+        <option value="{{i}}"><span>{{i}}</span><span>/</span>{{list}}</option>
+    <%}%>
+    
+</script>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/common.js"></script>
+<script src="js/productlist.js"></script>    
+</body>
+</html>

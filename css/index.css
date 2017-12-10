@@ -1,0 +1,131 @@
+.m-nav {
+  width: 100%;
+  padding-top: 1.25rem;
+}
+.m-nav > .nav-one > li {
+  width: 25%;
+  float: left;
+}
+.m-nav > .nav-one > li > a {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: .875rem;
+  text-align: center;
+}
+.m-nav > .nav-one > li > a > img {
+  margin: 0 auto;
+  width: 2.625rem;
+}
+.m-nav > .nav-one > li > a > p {
+  color: #333;
+}
+.m-nav > .nav-two > li {
+  width: 25%;
+  float: left;
+  display: none;
+}
+.m-nav > .nav-two > li > a {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: .875rem;
+  text-align: center;
+}
+.m-nav > .nav-two > li > a > img {
+  margin: 0 auto;
+  width: 2.625rem;
+}
+.m-nav > .nav-two > li > a > p {
+  color: #333;
+}
+.space-two {
+  height: 5px;
+  background-color: #f1f1f1;
+}
+.m-sale {
+  width: 100%;
+}
+.m-sale .sale-tit {
+  width: 100%;
+  height: 1.875rem;
+  background-color: #FFA22A;
+  padding: .375rem .5rem;
+  box-sizing: border-box;
+  position: relative;
+}
+.m-sale .sale-tit > span {
+  color: #fff;
+  font-size: .75rem;
+}
+.m-sale .sale-tit > img {
+  width: 1.0625rem;
+  position: absolute;
+  top: .375rem;
+  right: .5rem;
+}
+.m-sale > ul > li {
+  width: 100%;
+  height: 6.875rem;
+  border-bottom: 1px solid #ccc;
+}
+.m-sale > ul > li > .sale-img {
+  width: 33%;
+  height: 6.25rem;
+  padding-top: .625rem;
+  padding-left: .625rem;
+  padding-bottom: .625rem;
+  box-sizing: border-box;
+}
+.m-sale > ul > li > .sale-img > img {
+  width: 5.3125rem;
+}
+.m-sale > ul > li > .sale-info {
+  width: 64%;
+  padding-top: .875rem;
+  padding-right: .75rem;
+  box-sizing: border-box;
+}
+.m-sale > ul > li > .sale-info > p {
+  font-size: .75rem;
+  color: #000;
+  margin-bottom: 1.5625rem;
+}
+.m-sale > ul > li > .sale-info > p > span {
+  color: red;
+}
+.m-sale > ul > li > .sale-info > span {
+  font-size: .625rem;
+}
+.m-more {
+  height: 2.75rem;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: .5rem .375rem;
+  box-sizing: border-box;
+}
+.m-more > .more-btn {
+  display: block;
+  width: 100%;
+  height: 1.5625rem;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #222;
+  border-radius: 8px;
+}
+.m-brand {
+  width: 100%;
+  height: 1.875rem;
+  background-color: #FFA22A;
+  padding: .375rem .5rem;
+  box-sizing: border-box;
+  position: relative;
+}
+.m-brand > span {
+  color: #fff;
+  font-size: .75rem;
+}
+.m-brand > img {
+  width: 1.0625rem;
+  position: absolute;
+  top: .375rem;
+  right: .5rem;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ray-品牌详情</title>
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/brand.css">
+</head>
+
+<body>
+    <!--头部开始-->
+    <div class="m-header clearfix">
+        <div class="h-left">
+            <img src="images/header_logo.png" alt="">
+        </div>
+        <div class="h-right">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </div>
+    <!--头部结束-->
+    <!--搜索区域开始-->
+    <div class="m-search">
+        <div class="s-inp">
+            <input type="text" name="" value="请输入你想比价的商品">
+        </div>
+        <div class="s-but fr">
+            <input type="button" value="搜索">
+        </div>
+    </div>
+    <div class="space"></div>
+    <!--搜索区域结束-->
+    <div class="brand-tit">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><span class="fa fa-angle-right"></span></li>
+            <li><a href="#">全部分类</a></li>
+            <li><span class="fa fa-angle-right"></span></li>
+        </ul>
+    </div>
+    <!--热门品牌排行-->
+    <div class="cont-brand">
+        <div class="brand-hot">
+            <span>热门品牌排行</span>
+        </div>
+    </div>
+
+    <div class="brand-list">
+        <ul>
+            <!--挖一个坑-->
+        </ul>
+    </div>
+    <!--热门品牌排行-->
+    <div class="cont-brand">
+        <div class="brand-hot">
+            <span>平板电视产品销量排行</span>
+        </div>
+    </div>
+
+    <!--产品列表开始-->
+    <div class="set-item">
+        <!--在挖一个坑-->
+
+    </div>
+
+    <!--产品列表结束-->
+
+    <div class="cont-brand">
+        <div class="brand-hot">
+            <span>平板电视最新评论</span>
+        </div>
+    </div>
+
+
+    <!--评论内容开始-->
+    <div class="brand-content">
+        <!--挖一个坑-->
+    </div>
+
+    <!--评论内容结束-->
+
+    <!--返回顶部开始-->
+    <div class="m-footer">
+        <div class="m-back">
+            <ul class="clearfix">
+                <li><a href="login.html">登录</a></li>
+                <li><a href="register.html">注册</a></li>
+                <li><a href="index.html"><span class="iconfont">&#xe611;</span>返回顶部</a></li>
+            </ul>
+        </div>
+
+        <div class="m-com">
+            <p><span>手机APP下载</span>&nbsp;<i>慢慢买手机版</i><b>--掌上比价平台</b></p>
+            <p><a href="index.html">m.manmanbuy.com</a></p>
+        </div>
+
+    </div>
+
+    <!--返回顶部结束-->
+
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+        <li>
+            <a class="clearfix" href="brand.html?brandtitleid={{v.brandTitleId}}">
+                     <i class="num-box">1</i>                  
+                    <p class="lis-name">{{v.brandName}}</p>
+                    <p class="lis-info">{{v.brandInfo}}</p>
+                     
+                    <span class="fa fa-angle-right fr arrow"></span>                  
+                </a>
+        </li>
+        {{/each}}
+
+    </script>
+
+
+    <script type="text/html" id="tpl2">
+        {{each result v i}}
+        <div class="list-item clearfix">
+            <div class="list-img fl">
+                {{#v.productImg}}
+            </div>
+            <a href="bijia.html?product={{v.productId}}">
+                <div class="list-info fr">
+                    <span class="text-">{{v.productName}}</span>
+                    <p>{{v.productPrice}}</p>
+                    <p>
+                        <span>{{v.productQuote}}</span>
+                        <span>评论(<i>{{v.productCom}}</i>)</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        {{/each}}
+    </script>
+
+    <script type="text/html" id="tpl3">
+    {{each result v i}}
+        <div class="content-del">
+            <div class="info-tit clearfix">
+                <div class="img-wrap fl">
+                    <img src="images/product.jpg" alt="">
+                </div>
+                <div class="del-info">
+                    <p>哈哈哈哈哈呵呵额哈哈哈哈哈哈收拾收拾和电脑都能拿出你猜猜</p>
+                </div>
+            </div>
+            <div class="content-info">
+                <div class="info-top clearfix">
+                    <span class="fl">{{v.comName}}</span>
+                    <span class="fr">{{v.comTime}}</span>
+
+                </div>
+                <div class="content-detail">
+                    <p>{{v.comContent}}<span>{{v.comFrom}}</span></p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/brand.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ray-白菜价</title>
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/baicaijia.css">
+</head>
+
+<body>
+    <!--头部开始-->
+    <div class="m-header clearfix">
+
+        <div class="h-center">
+            <p>白菜价-淘宝内部价</p>
+        </div>
+        <div class="h-right">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </div>
+    <!--头部结束-->
+
+    <!--main区域开始-->
+
+    <div class="bc-main">
+        <div class="main-tit">
+            <ul class="clearfix">
+                <!--挖一个坑-->
+           
+            </ul>
+            <span class="fa fa-angle-right"></span>
+
+        </div>
+
+        <!--商品列表开始-->
+
+        <div class="bc-list">
+            <ul class="lis-item">
+                <!--挖个坑-->
+            </ul>
+        </div>
+    </div>
+
+    
+    <!--main区域结束-->
+
+
+
+    <!--返回顶部开始-->
+    <div class="m-footer">
+        <div class="m-back">
+            <ul class="clearfix">
+                <li><a href="login.html">登录</a></li>
+                <li><a href="register.html">注册</a></li>
+                <li><span class="iconfont">&#xe611;</span>返回顶部</li>
+            </ul>
+        </div>
+
+        <div class="m-com">
+            <p><span>手机APP下载</span>&nbsp;<i>慢慢买手机版</i><b>--掌上比价平台</b></p>
+            <p><a href="index.html">m.manmanbuy.com</a></p>
+        </div>
+
+    </div>
+
+    <!--返回顶部结束-->
+
+    <!--模板1开始-->
+
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+
+        <li><a data-id="{{v.titleId}}" href="javascript:;">{{v.title}}</a></li>
+
+        {{/each}}
+    </script>
+
+    <!--模板2开始-->
+    <script type="text/html" id="tpl2">
+        {{each result v i}}
+
+        <li class="sale-item clearfix">
+            <div class="sale-img fl">
+                {{#v.productImg}}
+            </div>
+            <div class="sale-right">
+                <div class="sale-info ">
+                    {{#v.productName}}
+                    <p>{{#v.productPrice}}</p>
+
+                </div>
+
+                <div class="sale-buy clearfix">   
+                        <p>{{#v.productCouponRemain}}</p>                 
+                        <p class="yh fl">{{#v.productCoupon}}</p>
+                        <a href="{{v.productHref}}">
+                       <input class="fr" type="button" name="" value="下单链接">
+                       </a>                 
+
+                </div>
+            </div>
+
+        </li>
+
+        {{/each}}
+    </script>
+
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/baicaijia.js"></script>
+</body>
+
+</html>

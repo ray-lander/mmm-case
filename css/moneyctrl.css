@@ -1,0 +1,41 @@
+@import "base.less";
+.m-header .h-center {
+  text-align: center;
+  font-size: .875rem;
+  font-weight: bold;
+  color: #fff;
+}
+.list-item {
+  width: 100%;
+  height: 6.25rem;
+}
+.list-item > .list-img {
+  padding: .625rem;
+  box-sizing: border-box;
+  width: 6.0625rem;
+  height: 6.0625rem;
+}
+.list-item .list-info {
+  padding: .75rem 0;
+  width: 12.5rem;
+  overflow: hidden;
+}
+.list-item .list-info > span {
+  display: inline-block;
+  height: 2.125rem;
+  font-size: .6875rem;
+  color: #333;
+  word-break: break-all;
+}
+.list-item .list-info > p:nth-child(2) {
+  color: red;
+  font-size: .6875rem;
+  margin-bottom: .625rem;
+}
+.list-item > .list-info {
+  box-sizing: border-box;
+}
+.list-info .linesay i {
+  color: #444;
+  font-size: .5625rem;
+}

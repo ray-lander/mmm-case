@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ray-省钱控商品列表</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/moneyctrl.css">
+</head>
+
+<body>
+    <!--头部开始-->
+    <div class="m-header clearfix">
+        <div class="h-center">
+            <p>省钱控-最新优惠</p>
+        </div>
+        <div class="h-right">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </div>
+    <!--头部结束-->
+
+    <!--main区域开始-->
+
+    <div class="m-main">
+
+        <div class="set-item">
+            <!--在挖一个坑-->
+
+        </div>
+
+    </div>
+    <!--main区域结束-->
+
+    <!--翻页区域开始-->
+
+    <div class="set-page">
+        <div class="m-page clearfix">
+            <div class="fl page-prve">
+                <input type="button" value="上一页">
+            </div>
+            <div class="page-sel">
+                <select>
+                <option value="1"><span class="page-num">1</span>/3</option>
+            </select>
+            </div>
+            <div class="fr page-next">
+                <input type="button" value="下一页">
+            </div>
+            <div class="space"></div>
+        </div>
+    </div>
+
+    <!--翻页区域结束-->
+
+    <!--返回顶部开始-->
+    <div class="m-footer">
+        <div class="m-back">
+            <ul class="clearfix">
+                <li><a href="login.html">登录</a></li>
+                <li><a href="register.html">注册</a></li>
+                <li><span class="iconfont">&#xe611;</span>返回顶部</li>
+            </ul>
+        </div>
+
+        <div class="m-com">
+            <p><span>手机APP下载</span>&nbsp;<i>慢慢买手机版</i><b>--掌上比价平台</b></p>
+            <p><a href="index.html">m.manmanbuy.com</a></p>
+        </div>
+
+    </div>
+
+    <!--返回顶部结束-->
+
+
+
+
+    <!--模板开始-->
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+        <div class="list-item clearfix">
+            <div class="list-img fl">
+                {{#v.productImg2}}
+            </div>
+            <a href="moneyproduct.html?product={{v.productId}}">
+                <div class="list-info fr">
+                    <span class="text-">{{v.productName}}</span>
+                    <p>{{v.productPrice}}</p>
+                    <p>
+                        <span>{{v.productQuote}}</span>
+                        <span>评论(<i>{{v.productComCount}}</i>)</span>
+                    </p>
+                    <span class="fr linesay">
+                        <i class="iconfont">&#xe65a;</i>
+                        <i>{{v.productComCount}}</i>
+                    </span>
+                </div>
+            </a>
+        </div>
+        {{/each}}
+    </script>
+
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/rem.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/moneyctrl.js"></script>
+</body>
+
+</html>

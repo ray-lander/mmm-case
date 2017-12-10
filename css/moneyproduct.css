@@ -1,0 +1,161 @@
+@import "base.less";
+.m-header .h-center {
+  text-align: center;
+  font-size: .875rem;
+  font-weight: bold;
+  color: #fff;
+}
+.money-main {
+  width: 100%;
+}
+.money-main .money-tit {
+  height: 16.25rem;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2.8125rem;
+  padding-left: .5rem;
+  padding-right: .9375rem;
+  box-sizing: border-box;
+}
+.money-main .money-tit > h2 {
+  font-size: .875rem;
+  margin-bottom: .9375rem;
+}
+.money-main .money-tit .mon-t {
+  margin-bottom: 1.25rem;
+  width: 12.5rem;
+  color: #666;
+}
+.money-main .money-tit p {
+  word-break: break all;
+}
+.money-main .money-tit .mon-a {
+  font-size: .8125rem;
+}
+.money-main .money-tit > img {
+  width: 6.25rem;
+  height: 6.875rem;
+  float: right;
+}
+.money-main > .money-img {
+  width: 100%;
+  height: 20rem;
+  margin: 0 auto;
+}
+.money-main > .money-list {
+  width: 100%;
+}
+.money-main > .money-list > .money-cen {
+  width: 7.5rem;
+  margin: 0 auto;
+  box-shadow: 5px 5px 3px #ccc;
+  border: 1px solid #ccc;
+}
+#disstorck {
+  padding: 10px;
+  box-sizing: border-box;
+}
+#disstorck > li {
+  border-bottom: 1px solid #ccc;
+  padding-left: .625rem;
+  padding-right: .625rem;
+}
+#disstorck > li > a {
+  width: 100%;
+}
+#disstorck > li > a > span {
+  color: #000;
+  font-weight: bold;
+  font-size: .625rem;
+  width: 100%;
+  display: block;
+}
+#disstorck > li > a > span > strong {
+  float: right;
+  color: red;
+}
+.go-pay {
+  width: 100%;
+  padding-top: .9375rem;
+  padding-bottom: .9375rem;
+  padding-left: .9375rem;
+  padding-right: .9375rem;
+  box-sizing: border-box;
+}
+.go-pay > input {
+  display: block;
+  width: 100%;
+  height: 1.5625rem;
+  background-color: #ff9000;
+  border-radius: 7px;
+  font-size: .75rem;
+  color: #fff;
+}
+.we-chat {
+  width: 100%;
+  padding: .625rem;
+  box-sizing: border-box;
+}
+.we-chat > img {
+  width: 100%;
+}
+div .tit {
+  font-size: .75rem;
+  font-weight: bold;
+}
+div.form {
+  width: 100%;
+  position: relative;
+}
+div.form > textarea {
+  width: 100%;
+  border-radius: 2px;
+  height: 5.75rem;
+}
+div.form > .ctrl input {
+  width: 5.3125rem;
+  height: 2rem;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #ff9000;
+  position: absolute;
+  bottom: .6875rem;
+  right: .4rem;
+}
+.userimg {
+  width: 2.5rem;
+  float: left;
+}
+.userimg img {
+  width: 2.0625rem;
+  border-radius: 50%;
+  margin-bottom: .625rem;
+}
+.cu-content-pl {
+  padding: 10px;
+  box-sizing: border-box;
+}
+#newcomment.tit {
+  font-size: .75rem;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+.list {
+  line-height: 2.5rem;
+}
+.list .con {
+  overflow: hidden;
+  background-clip: yellow;
+}
+.list .username {
+  width: 6.5625rem;
+  color: cyan;
+}
+.list .time {
+  float: right;
+  width: 6.5625rem;
+  margin: 0;
+}
+.list .content {
+  width: 6.5625rem;
+}

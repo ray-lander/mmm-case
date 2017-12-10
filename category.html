@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ray-首页</title>
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/categroy.css">
+</head>
+<body>
+    <!--头部开始-->
+    <div class="m-header clearfix">
+        <div class="h-left">
+            <img src="images/header_logo.png" alt="">
+        </div>
+        <div class="h-right">
+            <img src="images/header_app.png" alt="">
+        </div>
+    </div>
+    <!--头部结束-->
+    <!--搜索区域开始-->
+    <div class="m-search">
+        <div class="s-inp">
+            <input type="text" name="" value="请输入你想比价的商品">
+        </div>
+        <div class="s-but fr">
+            <input type="button" value="搜索">
+        </div>
+    </div>
+    <div class="space"></div>
+    <!--搜索区域结束-->
+  <!--大家电开始-->
+<div class="m-family">
+    <!--挖个坑-->
+</div>
+  <!--手机数码结束-->
+  <!--底部开始--> 
+<div class="m-footer">
+    <div class="m-back">
+        <ul class="clearfix">
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="index.html"><span class="iconfont">&#xe611;</span>返回顶部</a></li>
+        </ul>
+    </div>
+
+    <div class="m-com">
+        <p><span>手机APP下载</span>&nbsp;<i>慢慢买手机版</i><b>--掌上比价平台</b></p>
+        <p><a href="index.html">m.manmanbuy.com</a></p>
+    </div>
+
+</div>
+
+<!--底部结束-->
+
+<script type="text/html" id="tpl">
+{{each result  v i}}
+    <div class="family-tit clearfix"  data-id={{v.titleId}}>
+        <span class="fl">{{v.title}}</span>
+        <i class="fr fa fa-angle-down drop-list"></i>
+    </div>
+    <ul class="cate-list clearfix qie2 qie">
+        <!--<li><a href="#">{{家电}}</a></li>-->
+    </ul>
+{{/each}}
+
+</script>
+
+<script type="text/html" id="tpl2">
+    {{each result as v i}}
+    <li><a href="productlist.html?categoryid={{v.categoryId}}">{{v.category}}</a></li>
+    {{/each}}
+</script>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/categroy2.js"></script>    
+</body>
+</html>
